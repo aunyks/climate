@@ -149,7 +149,7 @@
           svg.appendChild(svgLine(86, 68, 70, 110));
           svg.appendChild(svgLine(121, 100, 15, 65));
           svg.appendChild(svgLine(108, 77, 72, 140));
-          svg.appendChild(svgLine(143, 35, 104, 130));
+          svg.appendChild(svgLine(143, 135, 104, 130));
           break;
         case 'cloud':
           svg.appendChild(svgCloud());
@@ -197,11 +197,10 @@
     };
 
     window.onload = function(){
-      document.getElementById('temp').style.opacity = 0;
-      setWeatherType('cloud');
+      setWeatherType('rain');
       setTemp('155');
       fadeIn(document.getElementById('temp'), 1500);
-      new Vivus('weather', {duration: 100, type: 'async'});
+      new Vivus('weather', {duration: 100});
     };
   </script>
 </html>
