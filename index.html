@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Climate</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #eee;
+      overflow: hidden;
+      font-family: 'Open Sans', sans-serif;
+      color: black;
+      margin: 0 !important;
+    }
+
+    #container {
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: 350px;
+      height: 350px;
+      margin-left: -175px;
+      margin-top: -175px;
+    }
+
+    #fermion {
+      width: 50px;
+      height: 50px;
+      left: 0;
+      margin-left: 25px;
+    }
+
+    .bottom-row {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 1.25ex);
+      font-size: 5em;
+      text-align: center;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: 50%;
+      margin-left: -100px;
+      margin-bottom: 50px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img src="icons/sun.svg" />
+      <h1 id="temp">99&deg;</h1>
+    </div>
+
+    <a href="http://aunyks.com/fermion">
+      <svg id="fermion" class="bottom-row" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <line x1="0" y1="50" x2="25" y2="5" stroke-linecap="round" stroke-width="2" stroke="black"/>
+        <line x1="25" y1="5" x2="50" y2="50" stroke-linecap="round" stroke-width="2" stroke="black"/>
+        <line x2="0" y2="49" x1="50" y1="49" stroke-linecap="round" stroke-width="2" stroke="black"/>
+        <circle cx="25" cy="35" r="14" stroke="black" stroke-width="2" fill="none" />
+      </svg>
+    </a>
+
+    <p class="bottom-row" style="position: absolute; right: 0; margin-right: 25px; font-size: 1.5em;">Powered by Dark Sky</p>
+  </body>
+</html>
